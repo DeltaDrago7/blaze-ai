@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "108936432344",
+    "project_id": "stockmind-testing",
+    "storage_bucket": "stockmind-testing.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108936432344:android:6ff6652a01c489ad8165ad",
+        "android_client_info": {
+          "package_name": "com.example.blazemobile.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108936432344-plsmqqtlrr49i04sh8bh10jgl23d3i69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKtwUjtDJFc4utCmQ0g6OzpZMkIpHTg1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108936432344-plsmqqtlrr49i04sh8bh10jgl23d3i69.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "108936432344-4dq7pn9cr5guqtn4olgenssefkq7np8i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.blazemobile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
