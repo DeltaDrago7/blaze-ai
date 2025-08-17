@@ -190,218 +190,7 @@ List<String> sectors = [
   'Utilities'
 ];
 
-dynamic educationalContent = {
-  'content-amount': 2,
-  0: {
-    'full-module-title': 'Investing 101',
-    'module-title': 'What is a stock?',
-    'module-image': 'finance',
-    'module-length': 9,
-    'paragraphs-length': 5,
-    'titles': [
-      "What is a Share?",
-      "So, What is a Stock?",
-      "Why Do Companies Issue Shares?",
-      "What’s in It for You as an Investor?",
-      "Why Do Stock Prices Go Up or Down?",
-    ],
-    'paragraphs': [
-      "Imagine a company as a big pie. A share is one slice of that pie — a single unit of ownership in the company. The more slices you own, the more of the company you control.\n\nCompanies divide themselves into thousands (or even millions) of these shares to make it easier to raise money and allow many people to invest.",
-      "A stock is simply the collection of all the company’s shares available to buy and sell on the stock market. When you buy a stock, you're buying one or more shares, which makes you a partial owner of the company.\n\nThat ownership means you benefit when the company does well — your shares can increase in value, and you might receive profits.",
-      "Instead of taking out a loan, companies often issue shares to raise money. This process is called an Initial Public Offering (IPO). It allows the public — people like you — to buy those shares on the stock market.\n\nThe company uses the money to grow, and in return, you get a shot at sharing in its success.",
-      "When you own shares (stock), you become a shareholder. This gives you certain benefits:\n\nCapital gains – if the share price rises, you can sell for a profit.\n\nDividends – some companies distribute a portion of their profits to shareholders.\n\nYou're not running the company — but you are part of it.",
-      "Stock prices change because of supply and demand — basically, how many people want to buy shares versus how many want to sell them.\n\nWhen more people want to buy a stock than sell it, the price tends to go up.When more people want to sell than buy, the price usually goes down.\n\nThis demand is influenced by:\n\n📈 Company performance – strong earnings, innovation, or growth can attract buyers.\n\n📰 News & events – product launches, scandals, or global news can affect investor behavior.\n\n💰 Market conditions – interest rates, inflation, and the economy play a big role.\n\n😬 Investor emotion – fear, hype, or trends (like on social media) can create price swings.\n\nSo, stock prices move not just because of what a company is worth, but also because of what people are doing in the market — buying or selling."
-    ],
-    'paragraph-questions': [
-      "What is a stock in simple terms?",
-      "Why do companies issue stocks?",
-      "How do you make money from stocks?",
-      "What are dividends, and how do they work?",
-      "What are the risks of investing in stocks?",
-      "How is trading different from long-term investing?"
-    ],
-    "questions-length": 5,
-    "questions": {
-      0: {
-        'type': "multiple-choice",
-        'question': "If a stock’s price goes up, what’s the most likely reason?",
-        'explanation': 'Prices rise when demand outweighs supply',
-        'answer': 2,
-        'options': [
-          "The government ordered a price increase",
-          "The company is reducing the number of shares",
-          "More investors are buying than selling",
-          "The company increased its office size",
-        ],
-      },
-      1: {
-        'type': "drag-and-drop",
-        'prompt': 'Tap the matching pairs',
-        'pairs-keys': [
-          'Stock',
-          'Share',
-          'IPO',
-          'Dividend',
-          //'Capital Gain'
-        ],
-        'pairs-values': [
-          "A collection of all a company's shares available to trade",
-          "A single unit of ownership in a company",
-          "When a company issues shares to the public for the first time",
-          "A portion of company profits shared with shareholders",
-          //"Profit earned when selling a stock for more than you bought it",
-        ],
-      },
-      2: {
-        'type': "fill-sentence-gaps",
-        'prompt': 'Complete the sentences by selecting the correct word from the list below.',
-        'answer': "shares",
-        "explanation": "Shares are units of ownership.",
-        'sentence': "When you buy a stock, you're actually buying one or more ________ in a company, which gives you partial ownership.",
-        'gaps': 1,
-        'word-bank': [
-          'dividends',
-          'shares',
-          'IPO',
-          'demand',
-          "capital gains"
-        ],
-      },
-      3: {
-        'type': "true-or-false",
-        'prompt': 'Select the true statements only',
-        'answer': [0,3],
-        'options': [
-          'Buying stock means you own part of the company.',
-          'Stock prices only change after a company releases financial reports.',
-          'Dividends are a guaranteed part of owning any stock.',
-          'You can start investing even with a small amount of money.',
-        ],
-      },
-      4: {
-        "type": "multiple-choice",
-        "question": "You just bought 5 shares of a company. What does this mean?",
-        "explanation": "Owning shares means you legally own a part of the company, but you don’t control it.",
-        "answer": 2,
-        "options": [
-          "You now run part of the company",
-          "You have access to private company info",
-          "You own a small part of the company",
-          "You're guaranteed monthly profits"
-        ]
-      },
-    },
-  },
-  1: {
-    'full-module-title': 'Investing 101',
-    'module-title': 'Time value of money',
-    'module-image': 'fintech',
-    'module-length': 10,
-    'paragraphs-length': 4,
-    'titles': [
-      "What is the time value of money (TVM)?",
-      "Let's look at an example!",
-      "How is TVM calculated?",
-      "How is this concept applied in real situations?",
-    ],
-    'paragraphs': [
-      "The Time Value of Money (TVM) is a basic but powerful concept in finance that helps us understand how the value of money changes over time. In simple terms, TVM means that money you have today is worth more than the same amount of money you receive in the future. Why? Because money today can be invested or used to earn more money over time. For example, if someone gives you \$100 today, you could put it in a savings account or invest it, and after one year, it might become \$105. That extra \$5 is the reward for not spending the money right away — it’s called interest or return.",
-      "To make this concept more clear, imagine choosing between receiving \$1,000 today or \$1,000 one year from now. Most people would choose to take the money today, and that’s the smarter choice — because if you take it now, you can invest it or use it to make more money. Even if you just leave it in a bank account with a small interest rate, it will grow over time. On the other hand, if you wait a year, you lose the chance to earn anything with that money during that time.",
-      "TVM is often calculated using two key ideas: Present Value (PV) and Future Value (FV). Present Value is the value today of a certain amount of money you will receive in the future. Future Value is the amount of money you’ll have in the future if you invest a certain amount today. For example, if you invest \$1,000 today at a 5% annual interest rate, the future value after one year would be \$1,050. These formulas help you decide whether it's better to receive money now or later, and how much future money is actually worth in today’s terms.",
-      "This concept is used in many real-life situations. When you take out a loan, save for retirement, or evaluate an investment, TVM plays an important role. It helps businesses and individuals compare different financial options and make better decisions. By understanding TVM, you can make smarter choices about saving, borrowing, and investing your money. Even though the formulas might seem a bit technical at first, the idea behind them is simple: money today has more power than the same amount in the future.",
-    ],
-    'paragraph-questions': [
-      "Why is TVM important?",
-      "Why does inflation matter when thinking about the time value of money?"
-      "What is the difference between present value and future value?",
-      "How does interest (simple vs. compound) affect the value of money over time?",
-      "How do you calculate the future value of an investment?",
-      "What is a discount rate, and how is it used to calculate present value?",
-    ],
-    "questions-length": 6,
-    "questions": {
-      0: {
-        'type': "multiple-choice",
-        'question': "Why is \$100 today worth more than \$100 received one year from now?",
-        'explanation': 'Because you can invest today’s money to earn interest over time',
-        'answer': 1,
-        'options': [
-          "Because of inflation making money more valuable in the future",
-          "Because you can invest today’s money to earn interest over time",
-          "Because money loses value when saved",
-          "Because future money is always guaranteed",
-        ],
-      },
-      1: {
-        'type': "multiple-choice",
-        'question': "What does the concept of Present Value (PV) help you determine?",
-        'explanation': 'The value today of money you will receive in the future',
-        'answer': 2,
-        'options': [
-          "How much money you have saved today",
-          "How much money you will need to retire",
-          "The value today of money you will receive in the future",
-          "The amount of interest you pay on a loan",
-        ],
-      },
-      2: {
-        'type': "fill-sentence-gaps",
-        'prompt': 'Complete the sentence by selecting the correct word from the list below.',
-        'answer': "Time Value",
-        "explanation": "Time Value reflects that money today is worth more because it can earn interest.",
-        'sentence': "Money available today is more valuable than the same amount in the future because of its earning potential. This concept is known as the ________ of money.",
-        'gaps': 1,
-        'word-bank': [
-          'Future Value',
-          'Time Value',
-          'Compound Interest',
-          'Present Value',
-        ],
-      },
-      3: {
-        'type': "fill-sentence-gaps",
-        'prompt': 'Complete the sentence by selecting the correct word from the list below.',
-        'answer': "Time Value",
-        "explanation": "Discounting is the process of finding today’s value of future money.",
-        'sentence': "The process of determining how much a future sum of money is worth today is called ________.",
-        'gaps': 1,
-        'word-bank': [
-          'Compounding',
-          'Discounting',
-          'Saving',
-          'Borrowing',
-        ],
-      },
-      4: {
-        'type': "true-or-false",
-        'prompt': 'Select the true statements only',
-        'answer': [0,1,3],
-        'options': [
-          'The Time Value of Money helps compare the value of money received at different times.',
-          'Future Value tells us how much today’s money will be worth in the future.',
-          'Present Value increases as the interest rate increases.',
-          'Discounting is used to calculate how much a future amount is worth today.',
-        ],
-      },
-      5: {
-        'type': "drag-and-drop",
-        'prompt': 'Tap the matching pairs',
-        'pairs-keys': [
-          'Present Value',
-          'Future Value',
-          'Interest Rate',
-          'Discounting',
-        ],
-        'pairs-values': [
-          "Calculating how much future money is worth today",
-          "The amount money grows to in the future",
-          "The percentage used to calculate growth or discounting",
-          "The process of finding present value",
-        ],
-      },
-    },
-  },
-};
+
 
 String previousPage = "";
 String currentPage = 'home';
@@ -1126,3 +915,1716 @@ final List<Map<String, dynamic>> sp500StockList = [
 {'symbol': 'ZTS', 'name': 'Zoetis Inc.'},
 {'symbol': 'Sum', 'name': 'Summit Materials, Inc.'},
 ];
+
+
+//-----learn-----//
+dynamic educationalModules = {
+  'content-amount': 6,
+  0: {
+    'title': 'Foundations of Trading & Finance',
+    'goal': "Build your financial vocabulary and understand the basics of what you're investing in.",
+    'topics': {
+      '1.1': 'What Is a Stock? Understanding Ownership',
+      '1.2': 'Assets, Liabilities & Equity: Core Accounting Concepts',
+      '1.3': 'What Is a Company? Business Basics for Traders',
+      '1.4': 'Risk vs Return: The Core Trade-Off',
+      '1.5': 'How Stock Prices Move: Supply, Demand & Market Sentiment',
+      '1.6': 'Buy, Sell, Long & Short Explained',
+      '1.7': 'Dividends: What They Are and How They Work',
+      '1.8': {
+        'title': 'Introduction to Financial Statements',
+        'subtopics': ['Income Statement', 'Balance Sheet', 'Cash Flow Statement']
+      },
+      '1.9': 'Key Financial Ratios Simplified (P/E, EPS, ROE, D/E, etc.)',
+    }
+  },
+  1: {
+    'title': 'Understanding the Market Environment',
+    'goal': 'Learn how markets operate, who participates, and what instruments exist.',
+    'topics': {
+      '2.1': 'What Is a Stock Exchange & How It Works',
+      '2.2': 'Primary vs Secondary Markets',
+      '2.3': 'Types of Market Participants (Retail, Institutions, Market Makers)',
+      '2.4': 'Orders: Market, Limit, Stop, Stop-Limit',
+      '2.5': 'Volume, Liquidity, Spread: Market Mechanics',
+      '2.6': 'Indices (S&P 500, NASDAQ, EGX30): What They Represent',
+      '2.7': {
+        'title': 'Asset Classes Explained',
+        'subtopics': ['Stocks', 'Bonds (Fixed Income)', 'Commodities (Gold, Oil, etc.)', 'Currencies (Forex)']
+      },
+      '2.8': {
+        'title': 'Funds & Pooled Investments',
+        'subtopics': ['ETFs', 'Mutual Funds', 'Index Funds']
+      },
+      '2.9': 'Defensive Assets & Diversification through Instruments',
+    }
+  },
+  2: {
+    'title': 'Stock & Asset Evaluation Techniques',
+    'goal': 'Learn how to analyze and research assets using different methods.',
+    'topics': {
+      '3.1': {
+        'title': 'Fundamental Analysis',
+        'subtopics': ['Revenue, Profit, Margins', 'Earnings Reports & What to Look For', 'Valuation Ratios (P/E, P/B, PEG)']
+      },
+      '3.2': {
+        'title': 'Technical Analysis',
+        'subtopics': ['Reading Candlesticks', 'Trends, Patterns, Support & Resistance', 'Indicators (Moving Averages, RSI, MACD)']
+      },
+      '3.3': 'Sentiment & News Analysis: Market Mood, Earnings Season, Media Impact',
+      '3.4': {
+        'title': 'Understanding Stock & Fund Profiles',
+        'subtopics': ['52W High/Low', 'Beta', 'Volume', 'Market Cap']
+      },
+      '3.5': 'How to Research Your First Trade Idea',
+    }
+  },
+  3: {
+    'title': 'Building Your Strategy & Style',
+    'goal': 'Define your trading approach and structure a personalized system.',
+    'topics': {
+      '4.1': 'Trading vs Investing: Which Path Fits You?',
+      '4.2': {
+        'title': 'Timeframes Explained',
+        'subtopics': ['Day Trading', 'Swing Trading', 'Position Trading', 'Long-Term Investing']
+      },
+      '4.3': 'Risk Profile & Capital Allocation',
+      '4.4': {
+        'title': 'Creating a Trading Strategy',
+        'subtopics': ['Entry, Exit, Stop Loss', 'Risk-to-Reward Planning']
+      },
+      '4.5': {
+        'title': 'Building a Beginner Portfolio',
+        'subtopics': ['Diversification Across Assets & Sectors', 'Using Funds to Reduce Risk']
+      },
+      '4.6': {
+        'title': 'Portfolio Optimization Basics',
+        'subtopics': ['Rebalancing & Adjustments Over Time']
+      },
+      '4.7': 'Avoiding Common Beginner Mistakes',
+    }
+  },
+  4: {
+    'title': 'Psychology, Emotions & Execution Discipline',
+    'goal': 'Strengthen mindset, develop discipline, and prepare for real trading.',
+    'topics': {
+      '5.1': {
+        'title': 'How Emotions Affect Trading',
+        'subtopics': ['Fear', 'Greed', 'FOMO', 'Hesitation']
+      },
+      '5.2': 'Trade Planning & Journaling',
+      '5.3': 'Staying Disciplined During Losses & Gains',
+      '5.4': {
+        'title': 'Risk vs Reward Thinking',
+        'subtopics': ['Probability', 'Variability', 'Accepting Loss']
+      },
+      '5.5': {
+        'title': 'Confidence Through Simulated Trading',
+        'subtopics': ['Backtesting', 'Paper Trading']
+      },
+      '5.6': {
+        'title': 'When to Sell: Knowing When to Exit',
+        'subtopics': ['Taking Profits', 'Cutting Losses']
+      },
+      '5.7': 'Practicing Patience & Building Consistency',
+    }
+  },
+  5: {
+    'title': 'Real-World Readiness & Advanced Concepts',
+    'goal': 'Tie it all together and prepare for confident real-world application.',
+    'topics': {
+      '6.1': 'Portfolio Rebalancing in Practice',
+      '6.2': {
+        'title': 'Understanding Macroeconomic Indicators',
+        'subtopics': ['Interest Rates', 'Inflation', 'GDP']
+      },
+      '6.3': {
+        'title': 'Behavioral Biases in Finance',
+        'subtopics': ['Anchoring', 'Confirmation Bias', 'Loss Aversion']
+      },
+      '6.4': 'Market Cycles: Bull, Bear & Sideways',
+      '6.5': 'Smart Diversification Across Geographies & Instruments',
+      '6.6': 'Blaze Trade GPT: Customizing & Modifying Strategies',
+      '6.7': 'Filtering News for What Matters to You',
+      '6.8': 'Building a Continuous Learning Habit',
+      '6.9': 'Blaze Quiz & Certification: “Blaze Certified Beginner Trader”',
+    }
+  },
+};
+
+
+dynamic educationalContent = {
+  0: {
+    'content-amount': 12,
+    0: {
+      'module-title': 'What Is a Share? Understanding Stocks and Ownership',
+      'module-image': 'finance',
+      'module-length': 12,
+      'paragraphs-length': 5,
+      'titles': [
+        "What is a Share?",
+        "So, What is a Stock?",
+        "Why Do Companies Issue Shares?",
+        "What’s in It for You as an Investor?",
+        "Why Do Stock Prices Go Up or Down?",
+      ],
+      'paragraphs': [
+        "Imagine a company as a big pie. A share is one slice of that pie — a single unit of ownership in the company. The more slices you own, the more of the company you control.\n\nCompanies divide themselves into thousands (or even millions) of these shares to make it easier to raise money and allow many people to invest.",
+        "A stock is simply the collection of all the company’s shares available to buy and sell on the stock market. When you buy a stock, you're buying one or more shares, which makes you a partial owner of the company.\n\nThat ownership means you benefit when the company does well — your shares can increase in value, and you might receive profits.",
+        "Instead of taking out a loan, companies often issue shares to raise money. This process is called an Initial Public Offering (IPO). It allows the public — people like you — to buy those shares on the stock market.\n\nThe company uses the money to grow, and in return, you get a shot at sharing in its success.",
+        "When you own shares (stock), you become a shareholder. This gives you certain benefits:\n\nCapital gains – if the share price rises, you can sell for a profit.\n\nDividends – some companies distribute a portion of their profits to shareholders.\n\nYou're not running the company — but you are part of it.",
+        "Stock prices change because of supply and demand — basically, how many people want to buy shares versus how many want to sell them.\n\nWhen more people want to buy a stock than sell it, the price tends to go up.When more people want to sell than buy, the price usually goes down.\n\nThis demand is influenced by:\n\n📈 Company performance – strong earnings, innovation, or growth can attract buyers.\n\n📰 News & events – product launches, scandals, or global news can affect investor behavior.\n\n💰 Market conditions – interest rates, inflation, and the economy play a big role.\n\n😬 Investor emotion – fear, hype, or trends (like on social media) can create price swings.\n\nSo, stock prices move not just because of what a company is worth, but also because of what people are doing in the market — buying or selling."
+      ],
+      'paragraph-questions': [
+        "What is a stock in simple terms?",
+        "Why do companies issue stocks?",
+        "How do you make money from stocks?",
+        "What are dividends, and how do they work?",
+        "What are the risks of investing in stocks?",
+        "How is trading different from long-term investing?"
+      ],
+      "questions-length": 6,
+      "questions": {
+        0: {
+          'type': "multiple-choice",
+          'question': "You just bought 5 shares of a company. What does this mean?",
+          'explanation': 'Owning shares means you legally own a small part of the company — but you don’t control it, and profits are never guaranteed.',
+          'answer': 2,
+          'options': [
+            "You now run part of the company",
+            "You have access to private company info",
+            "You own a small part of the company",
+            "You're guaranteed monthly profits",
+          ],
+        },
+        1: {
+          'type': "multiple-choice",
+          'question': "Why do companies sell shares to the public?",
+          'explanation': 'Companies sell shares during an IPO to raise money from the public without taking a loan.',
+          'answer': 2,
+          'options': [
+            "To avoid paying taxes",
+            "To borrow money and pay it back later",
+            "To raise money to grow their business",
+            "To give rewards to employees",
+          ],
+        },
+        2: {
+          'type': "drag-and-drop",
+          'prompt': 'Drag the correct definition to each term.',
+          'pairs-keys': [
+            'Stock',
+            'Share',
+            'IPO',
+            'Dividend',
+            'Capital Gain'
+          ],
+          'pairs-values': [
+            "A collection of all a company's shares available to trade",
+            "A single unit of ownership in a company",
+            "When a company issues shares to the public for the first time",
+            "A portion of company profits shared with shareholders",
+            "Profit earned when selling a stock for more than you bought it",
+          ],
+          'explanation': [
+            "Stock ownership = ownership in the company",
+            "Prices move all the time, not just during announcements",
+            "Dividends are optional",
+            "Many apps allow small or fractional investments",
+          ]
+        },
+        3: {
+          'type': "true-or-false",
+          'prompt': 'Select the true statements only',
+          'answer': [0,3],
+          'options': [
+            'Buying stock means you own part of the company.',
+            'Stock prices only change after a company releases financial reports.',
+            'Dividends are a guaranteed part of owning any stock.',
+            'You can start investing even with a small amount of money.',
+          ],
+        },
+        4: {
+          'type': "multiple-choice",
+          'question': "What causes a stock’s price to go up?",
+          'explanation': 'Stock prices move with supply and demand. More buyers than sellers → higher price.',
+          'answer': 2,
+          'options': [
+            "The government raises the stock price",
+            "The company opens a new office",
+            "More people are buying than selling the stock",
+            "The company fires its CEO",
+          ],
+        },
+
+        5: {
+          'type': "fill-sentence-gaps",
+          'prompt': 'Complete the sentences by selecting the correct word from the list below.',
+          'answers': [
+            ['shares', 'ownership'],
+            ['IPO'],
+            ['capital gains', 'dividends'],
+            ['demand'],
+          ],
+          'sentences': [
+            "When you buy a stock, you’re buying ____, which gives you a small piece of ____ in the company.",
+            "A company sells shares to the public for the first time during an ____.",
+            "You can make money from stocks through ____ or by receiving ____.",
+            "Stock prices change based on supply and ____."
+          ],
+          'gaps': 6,
+          'word-bank': [
+            'shares',
+            'ownership',
+            'IPO',
+            "capital gains",
+            'dividends',
+            'demand',
+          ],
+        },
+      },
+    },
+    1: {
+      'module-title': 'Assets, Liabilities & Equity: Core Accounting Concepts',
+      'module-image': 'fintech',
+      'module-length': 12,
+      'paragraphs-length': 5,
+      'titles': [
+        "What a Company Owns vs. What It Owes",
+        "Assets – What the Company Owns",
+        "Liabilities – What the Company Owes",
+        "Equity – What Belongs to the Shareholders",
+        "The Accounting Equation – Tying Everything Together",
+      ],
+      'paragraphs': [
+        "Every company owns things it uses to run the business — like cash, equipment, or products it plans to sell. These are called assets.\n\nBut to get those assets, the company needs money. That money comes from two main sources:\n\nLiabilities — money the company owes to others, like bank loans, rent it hasn’t paid yet, or payments it still owes to suppliers.\n\nEquity — money that came from the company’s owners or shareholders, and belongs to them.\n\nHere’s the simple rule:\n\nAssets = Liabilities + Equity\n\nWhat the company owns = What it owes to others + What it owes to shareholders\n\nSo:\nAssets show what the company owns.\nLiabilities and equity show where the money came from to get those assets.\n\nThis is one of the core ideas behind how companies work - and it’s key to understanding what you really own as a shareholder.",
+        "Assets are everything the company owns that has value and helps it run the business. Some assets are used for daily operations, others for long-term growth.\n\nThere are two main types:\n\nCurrent Assets → things the company expects to use, sell, or turn into cash within one year.\n 📌 Examples: cash, inventory, or money customers owe the company.\n\nFixed Assets → long-term things the company uses to operate and grow.\n 📌 Examples: buildings, equipment, or vehicles.\n\nBoth types matter: current assets help the company stay running day-to-day, and fixed assets help it grow over time.",
+        "Liabilities are amounts the company owes to others — like bills, borrowed money, or upcoming payments.\n\nThere are two main types:\n\nCurrent Liabilities → things the company has to pay within a year.\n 📌 Examples: unpaid rent, unpaid wages, or short-term loans.\n\nLong-Term Liabilities → things the company will pay back over a longer time.\n 📌 Examples: long-term bank loans or money borrowed for expansion.\n\nLiabilities are not always bad — borrowing or delaying payments can help companies grow — but too much can be risky.",
+        "Equity is what’s left after a company pays off all its liabilities. It’s the portion of the business that belongs to the owners and shareholders.\n\nEquity comes from two main sources:\n\nMoney invested by the company’s owners or shareholders\n\nProfits the company kept (called retained earnings) instead of paying out as dividends\n\nSo when you own a share of a company, you're entitled to a portion of this equity. That’s why it’s often called shareholders’ equity — it reflects your stake in what the company owns after it pays its debts.",
+        "Let’s bring it all together with one simple accounting equation:\n\nAssets = Liabilities + Equity\n\nThis means that everything a company owns (its assets) was paid for in one of two ways:\n\nBy borrowing money or owing others → that’s liabilities\n\nBy getting money from the owners or shareholders → that’s equity\n\nFor example, if a company has 1 million USD in assets, that money must have come from somewhere — maybe 600,000 USD in liabilities and 400,000 USD in equity. Together, they always balance out.\n\nThis equation is the foundation of business finance, and it always holds true. No matter when you look at a company’s finances, this formula must be balanced. It gives you a clear snapshot of the company’s financial position at any point in time — what it owns, what it owes, and what’s left for its owners."
+      ],
+      'paragraph-questions': [
+        "Why is TVM important?",
+        "Why does inflation matter when thinking about the time value of money?"
+            "What is the difference between present value and future value?",
+        "How does interest (simple vs. compound) affect the value of money over time?",
+        "How do you calculate the future value of an investment?",
+        "What is a discount rate, and how is it used to calculate present value?",
+      ],
+      "questions-length": 8,
+      "questions": {
+        0: {
+          'type': "multiple-choice",
+          'question': "A company has 600,000 USD in assets and 400,000 USD in liabilities. What is its equity?",
+          'explanation': 'Equity = Assets − Liabilities → 600,000 − 400,000 = 200,000',
+          'answer': 0,
+          'options': [
+            "200,000 USD",
+            "1,000,000 USD",
+            "400,000 USD",
+            "600,000 USD",
+          ],
+        },
+        1: {
+          'type': "multiple-choice",
+          'question': "Which of the following is an example of a fixed asset?",
+          'explanation': 'Equipment is a long-term asset the company uses to operate — that makes it a fixed asset.',
+          'answer': 2,
+          'options': [
+            "Inventory",
+            "Cash",
+            "Equipment ",
+            "Customer payments",
+          ],
+        },
+        2: {
+          'type': "drag-and-drop",
+          'prompt': 'Tap the matching pairs',
+          'pairs-keys': [
+            'Assets',
+            'Liabilities',
+            'Equity',
+            'Current Assets',
+            'Fixed Assets',
+            'Current Liabilities',
+            'Long-Term Liabilities',
+
+          ],
+          'pairs-values': [
+            "What the company owns and uses to operate",
+            "What the company owes to others",
+            "What's left for the owners after debts are payed",
+            "Cash or items used/sold within a year.",
+            "Long-term items like equipments or buildings",
+            "Debts due within one year, like rent or wages",
+            "Debts to be paid over time, like large loans",
+          ],
+        },
+        3: {
+          'type': "multiple-choice",
+          'question': "If a company’s assets and liabilities both increase by 100,000 USD, what happens to equity?",
+          'explanation': "The accounting equation must stay balanced. If assets and liabilities increase equally, equity doesn't change.",
+          'answer': 2,
+          'options': [
+            "It increases",
+            "It decreases",
+            "It stays the same ",
+            "It doubles",
+          ],
+        },
+        4: {
+          'type': "true-or-false",
+          'prompt': 'Which Statement Is Most Accurate?',
+          'answer': [2],
+          'options': [
+            'Assets and equity are the same thing',
+            'Equity is always larger than liabilities',
+            'A company’s assets are funded by a mix of liabilities and equity',
+            'If equity increases, assets must decrease',
+          ],
+        },
+        5: {
+          'type': "true-or-false",
+          'prompt': 'Select the true statement[s] only',
+          'answer': [1,3,5],
+          'options': [
+            'The accounting equation is: Assets = Liabilities – Equity.',
+            'Fixed assets are expected to be used over many years.',
+            'Equity includes money the company owes to the government.',
+            'Liabilities include loans and unpaid bills.',
+            'The more liabilities a company has, the better.',
+            'If a company owes more than it owns, something is wrong with its financial position.',
+          ],
+        },
+        6: {
+          'type': "true-or-false",
+          'prompt': 'Which of the following are current assets? (Select all that apply)',
+          'answer': [0,1,3],
+          'options': [
+            "Cash",
+            "Products in stock (inventory)",
+            "A factory building",
+            "Money expected from customers",
+            "Office furniture",
+          ],
+        },
+        7: {
+          'type': "fill-sentence-gaps",
+          'prompt': 'Complete the sentences by selecting the correct word from the list below.',
+          'answers': [
+            ['assets', 'liabilities', 'increased'],
+            ['equity'],
+            ['assets'],
+            ['decreased'],
+            ['pressure'],
+          ],
+          'sentences': [
+            "If a company takes on more debt to buy new assets, then both ____ and ____ have ____.",
+            "If a company raises more money from shareholders without taking on new debt, its ____  will increase.",
+            "If a company buys new equipment using cash, then total ____ remain unchanged.",
+            "If a company’s assets shrink but its liabilities stay the same, this means its equity has ____."
+            "If a company delays repaying what it owes, its [liabilities] may stay high and increase financial ____."
+          ],
+          'gaps': 7,
+          'word-bank': [
+            'assets',
+            'liabilities',
+            'increased',
+            'equity',
+            'assets',
+            'decreased',
+            'pressure',
+
+          ],
+        },
+      },
+    },
+    2: {
+      'module-title': 'What is a Company? Business Basics for Traders',
+      'module-image': 'fintech',
+      'module-length': 12,
+      'paragraphs-length': 5,
+      'titles': [
+        "What Exactly Is a Company?",
+        "Types of Companies",
+        "How Companies Make Money",
+        "Why Companies Matter to Traders",
+        "Key Company Stakeholders",
+      ],
+      'paragraphs': [
+        "A company is an organization created to produce goods or provide services in exchange for money.\n\nIt can be as small as a local bakery with two employees or as large as Apple, with thousands of staff worldwide.\n\nA company exists as a separate legal entity, which means it can own assets, take on debt, sign contracts, and be sued — all in its own name, not in the name of its owners. This separation protects the owners’ personal assets from the company’s debts and obligations.",
+        "Companies can be structured in different ways depending on their size, goals, and regulations. Common types include:\n\nSole Proprietorship → Owned and run by one person. Easy to start, but the owner is personally liable for debts.\n\nPartnership → Owned by two or more people who share profits, losses, and responsibilities.\n\nPrivate Limited Company (Ltd) → Ownership is divided into shares, but these are not available to the public.\n\nPublic Limited Company (PLC) → Shares are listed on a stock exchange and can be bought by the public.\n\nFor traders, public companies are the most relevant, since they are the ones whose shares you can buy and sell.",
+        "The goal of a company is usually to make a profit — the money left over after all expenses are paid.\n\nThey do this by:\n\nSelling products (e.g., a phone manufacturer selling smartphones)\n\nProviding services (e.g., a streaming platform charging subscriptions)\n\nLicensing, franchising, or other revenue streams\n\nProfit is important because it can be reinvested into the business for growth or returned to shareholders as dividends.",
+        "When you buy shares in a company, you are essentially betting on its ability to make money in the future.\n\nIf the company performs well:\nIts share price may rise\n\nIt might pay dividends\n\nYour investment could grow in value\n\nIf it performs poorly:\nThe share price may fall\n\nDividends could be reduced or stopped\n\nYour investment could lose value\n\nUnderstanding how companies operate helps you make more informed investment decisions.",
+        "A company doesn’t work in isolation — it interacts with many groups, including:\n\nShareholders → Provide capital and expect returns.\n\nEmployees → Run the daily operations.\n\nCustomers → Buy the products or services.\n\nSuppliers → Provide raw materials or services to the company.\n\nRegulators → Ensure companies follow laws and rules.\n\nAs a trader, it’s important to understand how these relationships affect a company’s performance and share price."
+      ],
+      'paragraph-questions': [
+        "Why is TVM important?",
+        "Why does inflation matter when thinking about the time value of money?"
+            "What is the difference between present value and future value?",
+        "How does interest (simple vs. compound) affect the value of money over time?",
+        "How do you calculate the future value of an investment?",
+        "What is a discount rate, and how is it used to calculate present value?",
+      ],
+      "questions-length": 6,
+      "questions": {
+        0: {
+          'type': "multiple-choice",
+          'question': "Which of the following is NOT a type of company structure?",
+          'explanation': "A mutual fund is an investment vehicle, not a company structure.",
+          'answer': 2,
+          'options': [
+            "Sole Proprietorship",
+            "Partnership",
+            "Mutual Fund",
+            "Public Limited Company",
+          ],
+        },
+        1: {
+          'type': "true-or-false",
+          'prompt': "Which of these are ways a company can make money? (Select all that apply)",
+          'answer': [0,1,3],
+          'options': [
+            "Selling products",
+            "Offering services",
+            "Receiving donations from charities",
+            "Licensing its brand",
+          ],
+        },
+        2: {
+          'type': "drag-and-drop",
+          'prompt': 'Tap the matching pairs',
+          'pairs-keys': [
+            'Sole Proprietorship',
+            'Partnership',
+            'Private Limited Company',
+            'Public Limited Company',
+            'Dividend',
+            'Stakeholder',
+
+          ],
+          'pairs-values': [
+            "A business owned and run by one person",
+            "A business owned by two or more people sharing profits and responsibilities",
+            "A company whose shares are not sold to the public",
+            "A company whose shares are listed and traded on a stock exchange",
+            "A payment made to shareholders from company profits",
+            "Anyone with an interest in the company's operations",
+          ],
+        },
+        3: {
+          'type': "true-or-false",
+          'prompt': "Select the true statement[s] only",
+          'answers': [0,4],
+          'options': [
+            "A public limited company’s shares can be bought and sold on a stock exchange.",
+            "Sole proprietors have limited liability protection.",
+            "Companies only make money by selling physical goods.",
+            "Shareholders are always involved in day-to-day company decisions.",
+            "Regulators ensure companies operate within the law.",
+          ],
+        },
+        4: {
+          'type': "multiple-choice",
+          'question': "Why do traders mostly focus on public limited companies?",
+          'explanation': "Public limited companies are the ones available to traders through stock exchanges.",
+          'answer': 1,
+          'options': [
+            "They have fewer legal requirements",
+            "Their shares can be bought and sold on the stock market",
+            "They always pay high dividends",
+            "They are safer investments",
+          ],
+        },
+        6: {
+          'type': "fill-sentence-gaps",
+          'prompt': "Complete the sentences by selecting the correct word from the list below.",
+          'answers': [
+            ["public"],
+            ["products", "services"],
+            ["profit"],
+            ["liability"],
+            ["shareholders"],
+          ],
+          'sentences': [
+            "A company that sells shares on a stock exchange is called a ____ company.",
+            "A company earns money by selling ____ or offering ____.",
+            "The money left after expenses is called ____.",
+            "Owners in a sole proprietorship have unlimited ____ for the company’s debts.",
+            "____ are the people who own part of the company through shares.",
+          ],
+          'gaps': 6,
+          'word-bank': [
+            "shareholders",
+            "profit",
+            "services",
+            "public",
+            "liability",
+            "products",
+          ],
+        }
+      },
+    },
+    3: {
+      'module-title': 'Risk vs Return: The Core Trade-Off',
+      'module-image': 'fintech',
+      'module-length': 12,
+      'paragraphs-length': 5,
+      'titles': [
+        "What Is Risk in Investing?",
+        "What Is Return?",
+        "The Risk-Return Trade-Off",
+        "Measuring Risk & Return",
+        "Finding Your Comfort Zone",
+      ],
+      'paragraphs': [
+        "In investing, risk is the possibility that your investment will lose value.\n\nEvery investment — from stocks to real estate — comes with some level of uncertainty.\n\nRisk can come from:\n\nMarket movements → Prices go up and down based on supply, demand, and sentiment.\n\nCompany performance → Poor earnings or bad management can hurt share prices.\n\nEconomic changes → Inflation, interest rates, or global events can impact markets.\n\nThe key idea: higher potential returns usually come with higher risk.",
+        "Return is the money you make (or lose) from an investment. It can come in two main forms:\n\nCapital gains → Selling something for more than you paid.\n\nIncome → Dividends from stocks, interest from bonds, rent from property, etc.\n\nReturn is usually expressed as a percentage of your original investment. For example, if you invest 1,000 USD and earn 100 USD in profit, your return is 10%.",
+        "The risk-return trade-off means that if you want higher returns, you must be willing to take on higher risk.\n\nLow-risk investments (like government bonds) offer lower returns but are safer.\n\nHigh-risk investments (like small startup stocks) can offer big rewards — but you might lose a lot too.\n\nTraders and investors have to balance how much risk they can handle with how much return they want.",
+        "Investors often use metrics to help compare risk and return:\n\nVolatility → How much an investment’s price moves up and down.\n\nBeta → How much a stock moves compared to the overall market.\n\nSharpe Ratio → How much return you’re getting for the risk you’re taking.\n\nWhile the math can get complex, the basic idea stays the same: is the potential reward worth the risk?",
+        "There’s no single “right” amount of risk. It depends on:\n\nYour financial goals (short-term vs long-term)\n\nYour risk tolerance (how comfortable you are with losses)\n\nYour investment timeline (how long you can wait for returns)\n\nKnowing yourself is as important as knowing the market — your ideal investment is one you can hold without losing sleep."
+      ],
+      'paragraph-questions': [
+        "Why is TVM important?",
+        "Why does inflation matter when thinking about the time value of money?"
+            "What is the difference between present value and future value?",
+        "How does interest (simple vs. compound) affect the value of money over time?",
+        "How do you calculate the future value of an investment?",
+        "What is a discount rate, and how is it used to calculate present value?",
+      ],
+      "questions-length": 6,
+      "questions": {
+        0: {
+          'type': "multiple-choice",
+          'question': "What does “risk” mean in investing?",
+          'explanation': "Risk is about uncertainty — the possibility your investment’s value will decrease.",
+          'answer': 1,
+          'options': [
+            "The guaranteed profit you make",
+            "The chance of losing money on an investment",
+            "The interest you earn over time",
+            "The number of shares you own",
+          ],
+        },
+        1: {
+          'type': "true-or-false",
+          'prompt': "Which of the following are forms of return? (Select all that apply)",
+          'answer': [0,1,3],
+          'options': [
+            "Dividends",
+            "Capital gains",
+            "Inflation",
+            "Interest payments",
+          ],
+        },
+        2: {
+          'type': "drag-and-drop",
+          'prompt': "Tap the matching pairs",
+          'pairs-keys': [
+            "Risk",
+            "Return",
+            "Capital Gain",
+            "Volatility",
+            "Beta",
+            "Sharpe Ratio",
+          ],
+          'pairs-values': [
+            "The chance of losing value on an investment",
+            "The money earned or lost from an investment",
+            "Profit from selling an asset for more than you paid",
+            "How much an asset’s price moves up and down",
+            "A measure of how a stock moves compared to the market",
+            "A metric that compares return to risk taken",
+          ],
+        },
+        3: {
+          'type': "true-or-false",
+          'prompt': 'Select the true statement[s] only',
+          'answers': [0,3,4],
+          'options': [
+            "Government bonds are usually less risky than stocks.",
+            "Higher returns are guaranteed if you take on more risk.",
+            "Risk is the same for all investors.",
+            "Volatility measures how much a price changes over time.",
+            "Capital gains are a type of return.",
+          ],
+        },
+        4:{
+          'type': "multiple-choice",
+          'question': "Which investment type is most likely to have high risk and high return potential?",
+          'explanation': "Startups can grow quickly but also fail — high risk, high reward.",
+          'answer': 2,
+          'options': [
+            "Savings account",
+            "Government bonds",
+            "Startup company stock",
+            "Large established company stock",
+          ],
+        },
+        5: {
+          'type': "fill-sentence-gaps",
+          'prompt': "Complete the sentences by selecting the correct word from the list below.",
+          'answers': [
+            ["risk"],
+            ["capital gains"],
+            ["bonds"],
+            ["volatility"],
+            ["tolerance"],
+          ],
+          'sentences': [
+            "The possibility of losing money on an investment is called ____. ",
+            "The profit you make from selling an asset for more than you paid is called ____. ",
+            "Government ____ are generally considered low-risk investments.",
+            "____ measures how much an asset’s price changes over time.",
+            "An investor’s risk ____ determines how much uncertainty they can handle.",
+          ],
+          'gaps': 5,
+          'word-bank': [
+            "volatility",
+            "risk",
+            "capital gains",
+            "bonds",
+            "tolerance",
+          ],
+        }
+      },
+    },
+    4: {
+      'module-title': 'How Stock Prices Move: Supply, Demand & Market Sentiment',
+      'module-image': 'fintech',
+      'module-length': 12,
+      'paragraphs-length': 5,
+      'titles': [
+        "The Basics – Supply & Demand",
+        "What Creates Demand for a Stock?",
+        "What Creates Supply of a Stock?",
+        "The Role of Market Sentiment",
+        "Other Influences on Price Movement",
+      ],
+      'paragraphs': [
+        "Stock prices move for the same reason prices move in any marketplace: supply and demand.\n\nIf more people want to buy a stock (high demand) than sell it (low supply), the price usually goes up.\n\nIf more people want to sell (high supply) than buy (low demand), the price usually goes down.\n\nThe stock market is basically an ongoing auction — prices change as buyers and sellers negotiate.",
+        "Demand rises when investors believe the company will do well in the future. This can happen because of:\n\nStrong financial results (high profits, revenue growth)\n\nNew products or services that excite customers\n\nPositive industry trends (e.g., tech boom)\n\nFavourable economic conditions\n\nWhen optimism grows, more investors want in — pushing the price higher.",
+        "Supply increases when investors want to sell their shares. Reasons can include:\n\nPoor company results or bad news\n\nChanges in leadership or strategy\n\nEconomic downturns or higher interest rates\n\nFear of losing money\n\nWhen more people try to sell, prices usually fall.",
+        "Sometimes prices move even when there’s no major news — that’s market sentiment.\n\nSentiment is the overall feeling investors have toward the market or a stock:\n\nBullish sentiment → Optimistic, expecting prices to rise.\n\nBearish sentiment → Pessimistic, expecting prices to fall.\n\nSentiment can be driven by:\n\nTrends and rumours\n\nGlobal events (politics, disasters, policy changes)\n\nSocial media buzz and analyst opinions",
+        "While supply, demand, and sentiment are the main drivers, other factors play a role:\n\nEarnings reports – Quarterly updates on company performance\n\nDividends – Regular income can make a stock more attractive\n\nMergers & acquisitions – Big changes in a company’s structure or ownership\n\nRegulatory changes – New laws can help or hurt a business\n\nUnderstanding these drivers helps traders predict and react to price movements more effectively."
+      ],
+      'paragraph-questions': [
+        "Why is TVM important?",
+        "Why does inflation matter when thinking about the time value of money?"
+            "What is the difference between present value and future value?",
+        "How does interest (simple vs. compound) affect the value of money over time?",
+        "How do you calculate the future value of an investment?",
+        "What is a discount rate, and how is it used to calculate present value?",
+      ],
+      "questions-length": 6,
+      "questions": {
+        0: {
+          'type': "multiple-choice",
+          'question': "If more people want to buy a stock than sell it, what is likely to happen to the price?",
+          'explanation': "Higher demand than supply generally pushes prices higher.",
+          'answer': 2,
+          'options': [
+            "It stays the same",
+            "It goes down",
+            "It goes up",
+            "It becomes unpredictable",
+          ],
+        },
+        1:{
+          'type': "true-or-false",
+          'prompt': "Which of these could increase demand for a stock? (Select all that apply)",
+          'answer': [0,1,3],
+          'options': [
+            "Strong quarterly earnings",
+            "New, popular product launch",
+            "Negative press coverage",
+            "Industry growth trends",
+          ],
+        },
+        2: {
+          'type': "drag-and-drop",
+          'prompt': "Tap the matching pairs",
+          'pairs-keys': [
+            "Supply",
+            "Demand",
+            "Market Sentiment",
+            "Bullish",
+            "Bearish",
+            "Earnings Report",
+          ],
+          'pairs-values': [
+            "Number of shares investors want to sell",
+            "Number of shares investors want to buy",
+            "Overall feeling investors have toward the market or a stock",
+            "Positive outlook, expecting prices to rise",
+            "Negative outlook, expecting prices to fall",
+            "Company’s quarterly performance update",
+          ],
+        },
+        3: {
+          'type': "true-or-false",
+          'prompt': "Select the true statement[s] only",
+          'answer': [1,3,4],
+          'options': [
+            "Higher supply than demand usually pushes stock prices up.",
+            "Market sentiment can move prices even without major news.",
+            "Bullish investors expect prices to go down.",
+            "New product launches can boost demand.",
+            "Economic downturns often reduce demand for stocks.",
+          ],
+        },
+        4:{
+          'type': "multiple-choice",
+          'question': "Which factor is NOT likely to directly increase the price of a stock?",
+          'explanation': "Layoffs tied to poor performance are negative signals and may reduce demand.",
+          'answer': 2,
+          'options': [
+            "Positive earnings surprise",
+            "Industry-wide boom",
+            "Large-scale layoffs due to declining sales",
+            "Announcement of a new profitable contract",
+          ],
+        },
+        5:{
+          'type': "fill-sentence-gaps",
+          'prompt': "Complete the sentences by selecting the correct word from the list below.",
+          'answers': [
+            ["demand", "supply"],
+            ["bullish", "bearish"],
+            ["sentiment"],
+            ["earnings"],
+          ],
+          'sentences': [
+            "When more buyers than sellers want a stock, ____ is greater than ____. ",
+            "A ____ investor expects prices to rise, while a ____ investor expects them to fall.",
+            "Market ____ refers to the overall feeling investors have toward a stock or market.",
+            "Positive ____ reports can increase demand and push prices higher.",
+          ],
+          'gaps': 6,
+          'word-bank': [
+            "bullish",
+            "demand",
+            "supply",
+            "bearish",
+            "sentiment",
+            "earnings",
+          ],
+        }
+      },
+    },
+    5: {
+      'module-title': 'Buy, Sell, Long & Short Explained',
+      'module-image': 'fintech',
+      'module-length': 12,
+      'paragraphs-length': 5,
+      'titles': [
+        "The Basics of Buying & Selling",
+        "Going Long – The Classic Strategy",
+        "Going Short – Profiting When Prices Fall",
+        "Choosing Between Long & Short",
+        "The Role of Market Conditions",
+      ],
+      'paragraphs': [
+        "In the stock market, everything starts with two actions: buying and selling.\n\nBuying means you purchase shares of a company, hoping they’ll increase in value so you can sell them for a profit.\n\nSelling means giving up your ownership of shares, either to take profits or cut losses.\n\nTraders constantly make these decisions based on their market outlook and strategy.",
+        "When you go long (or “take a long position”), you:\nBuy shares first\n\nHold them, expecting the price to go up\n\nSell later at a higher price for a profit\n\nExample: You buy 10 shares at 50 USD each (500 USD total). The price rises to 60 USD, and you sell for 600 USD — your profit is 100 USD (minus any fees).\n\nGoing long is the most common way people invest — you profit when prices rise.",
+        "Short selling (or “going short”) is a way to profit from a falling stock price.\n\nHere’s how it works:\nYou borrow shares from a broker and sell them immediately at the current price.\n\nLater, you buy them back at a lower price.\n\nReturn the shares to the broker and keep the difference as profit.\n\nExample: You short 10 shares at 50 USD each (500 USD). The price drops to 40 USD, and you buy them back for 400 USD. You return the shares and keep 100 USD profit.\n\n⚠️ Warning: If the price rises instead of falling, your losses can be unlimited because there’s no cap on how high a stock price can go.",
+        "Long positions → Good when you believe a stock will rise in value.\n\nShort positions → Good when you believe a stock will fall in value.\n\nSome traders only go long, while others use both strategies depending on market conditions.",
+        "Market trends often guide your choice:\n\nIn a bull market, most traders prefer going long.\n\nIn a bear market, short selling becomes more common.\n\nAdvanced traders may even hedge — holding both long and short positions to reduce risk."
+      ],
+      'paragraph-questions': [
+        "Why is TVM important?",
+        "Why does inflation matter when thinking about the time value of money?"
+            "What is the difference between present value and future value?",
+        "How does interest (simple vs. compound) affect the value of money over time?",
+        "How do you calculate the future value of an investment?",
+        "What is a discount rate, and how is it used to calculate present value?",
+      ],
+      "questions-length": 6,
+      "questions": {
+        0:{
+          'type': "multiple-choice",
+          'question': "What does “going long” mean?",
+          'explanation': "Going long means you purchase shares hoping they’ll gain value.",
+          'answer': 1,
+          'options': [
+            "Borrowing shares to sell them immediately",
+            "Buying shares expecting their price to rise",
+            "Selling shares expecting their price to fall",
+            "Holding shares forever without selling",
+          ],
+        },
+        1: {
+          'type': "true-or-false",
+          'prompt': "Which statements are true about short selling? (Select all that apply)",
+          'answer': [0,1,3],
+          'options': [
+            "You borrow shares from a broker before selling them",
+            "You profit if the stock price drops",
+            "Your potential losses are limited to your initial investment",
+            "It is a strategy used when expecting a stock to fall",
+          ],
+        },
+        2: {
+          'type': "drag-and-drop",
+          'prompt': "Tap the matching pairs",
+          'pairs-keys': [
+            "Buy",
+            "Sell",
+            "Long Position",
+            "Short Position",
+            "Bull Market",
+            "Bear Market",
+          ],
+          'pairs-values': [
+            "Purchase shares to own them",
+            "Give up ownership of shares in exchange for money",
+            "Buying shares expecting the price to rise",
+            "Borrowing and selling shares, then buying them back later",
+            "Market condition where prices are generally rising",
+            "Market condition where prices are generally falling",
+          ],
+        },
+        3:{
+          'type': "true-or-false",
+          'prompt': "Decide if the following statements are true or false:",
+          'answers': [0.3],
+          'options': [
+            "Short selling can be more risky than going long.",
+            "Going long means you borrow shares before selling them.",
+            "In a bull market, traders usually prefer going short.",
+            "Long positions profit when prices rise.",
+            "Short selling always guarantees a profit if the market falls.",
+          ],
+
+        },
+        4: {
+          'type': "multiple-choice",
+          'question': "If you short sell a stock at 30 USD and later buy it back at 25 USD, what’s your profit per share?",
+          'explanation': "You sold high and bought low — 30 − 25 = 5 profit per share.",
+          'answer': 1,
+          'options': [
+            "25 USD",
+            "30 USD",
+            "5 USD",
+            "55 USD",
+          ],
+        },
+        5: {
+          'type': "fill-sentence-gaps",
+          'prompt': "Complete the sentences by selecting the correct word from the list below.",
+          'answers': [
+            ["long"],
+            ["short"],
+            ["profit"],
+            ["loss"],
+            ["bear", "bull"],
+          ],
+          'sentences': [
+            "A ____ position means buying shares expecting the price to rise.",
+            "A ____ position means borrowing shares, selling them, and buying them back later.",
+            "You make a ____ on a short sale if the price falls.",
+            "If a short sale goes wrong, your ____ can be unlimited.",
+            "Short selling is more common in a ____ market than in a ____ market.",
+          ],
+          'gaps': 6,
+          'word-bank': [
+            "short",
+            "profit",
+            "loss",
+            "long",
+            "bear",
+            "bull",
+          ],
+        }
+      },
+    },
+    6: {
+      'module-title': 'Dividends: What They Are and How They Work',
+      'module-image': 'fintech',
+      'module-length': 12,
+      'paragraphs-length': 5,
+      'titles': [
+        "What Is a Dividend?",
+        "How Dividends Are Paid",
+        "Dividend Yield",
+        "Why Companies Pay Dividends",
+        "Key Dividend Dates",
+      ],
+      'paragraphs': [
+        "A dividend is a payment a company makes to its shareholders, usually from its profits.\n\nThink of it as the company’s way of sharing a portion of its earnings with the people who own its stock.\n\nNot all companies pay dividends — some prefer to reinvest all their profits back into the business for growth.",
+        "Dividends are typically paid in cash directly into your brokerage account, but they can also be paid in the form of additional shares (stock dividends).\n\nMost companies pay dividends quarterly (every 3 months), but some pay annually, semi-annually, or even monthly.",
+        "The dividend yield measures how much a company pays in dividends each year compared to its stock price.\n\nFormula: Dividend yield = (annual dividend per share / share price) * 100\n\nExample: If a stock trades at USD50 and pays USD2 in annual dividends, the dividend yield is 4%.",
+        "Companies pay dividends to:\n\nReward shareholders for their investment\n\nSignal financial stability and confidence\n\nAttract investors looking for regular income\n\nEstablished, profitable companies are more likely to pay consistent dividends than fast-growing startups.",
+        "If you want to receive a dividend, you need to understand these important dates:\n\nDeclaration Date → The company announces the dividend amount and payment date.\n\nEx-Dividend Date → You must own the stock before this date to receive the dividend.\n\nRecord Date → The company checks its records to see who qualifies for the dividend.\n\nPayment Date → The dividend is actually paid."
+      ],
+      'paragraph-questions': [
+        "Why is TVM important?",
+        "Why does inflation matter when thinking about the time value of money?"
+            "What is the difference between present value and future value?",
+        "How does interest (simple vs. compound) affect the value of money over time?",
+        "How do you calculate the future value of an investment?",
+        "What is a discount rate, and how is it used to calculate present value?",
+      ],
+      "questions-length": 6,
+      "questions": {
+        0: {
+          'type': "multiple-choice",
+          'question': "What is a dividend?",
+          'explanation': "A dividend is a way for a company to share earnings with its owners — the shareholders.",
+          'answer': 1,
+          'options': [
+            "A fee charged by the broker",
+            "A portion of a company’s profits paid to shareholders",
+            "Interest earned on a savings account",
+            "A tax paid by investors",
+          ],
+        },
+        1: {
+          'type': "true-or-false",
+          'prompt': "Which statements about dividends are true? (Select all that apply)",
+          'answer': [0,1,3],
+          'options': [
+            "Dividends can be paid in cash or shares",
+            "All companies are required to pay dividends",
+            "Dividends are often paid quarterly",
+            "You must own a stock before the ex-dividend date to receive a dividend",
+          ],
+        },
+        2: {
+          'type': "drag-and-drop",
+          'prompt': "Tap the matching pairs",
+          'pairs-keys': [
+            "Dividend",
+            "Dividend Yield",
+            "Ex-Dividend Date",
+            "Record Date",
+            "Payment Date",
+          ],
+          'pairs-values': [
+            "A payment from a company’s profits to shareholders",
+            "Annual dividend as a percentage of share price",
+            "Last date to buy shares and still receive the dividend",
+            "Date when the company checks who owns shares",
+            "Date when dividends are distributed",
+          ],
+        },
+        3: {
+          'type': "true-or-false",
+          'prompt': "Select the true statement[s] only",
+          'answer': [1,3],
+          'options': [
+            "All companies pay dividends.",
+            "The dividend yield shows how much dividend income you get relative to share price.",
+            "If you buy a stock on the ex-dividend date, you still get the upcoming dividend.",
+            "Some companies pay dividends monthly.",
+            "Dividends are always paid in cash.",
+          ],
+
+        },
+        4: {
+          'type': "multiple-choice",
+          'question': "If a stock trades at USD40 and pays a USD1 annual dividend, what is its dividend yield?",
+          'explanation': "Dividend yield = 1/40 × 100 = 2.5%",
+          'answer': 1,
+          'options': [
+            "2%",
+            "2.5%",
+            "4%",
+            "5%",
+          ],
+        },
+        5: {
+          'type': "fill-sentence-gaps",
+          'prompt': "Complete the sentences by selecting the correct word from the list below.",
+          'answers': [
+            ["dividend"],
+            ["cash"],
+            ["quarterly"],
+            ["ex-dividend"],
+            ["yield"],
+          ],
+          'sentences': [
+            "A ____ is a payment from a company’s profits to its shareholders.",
+            "Dividends can be paid in ____ or additional shares.",
+            "Many companies pay dividends ____.",
+            "You must own a stock before the ____ date to receive the payout.",
+            "The ____ shows the annual dividend relative to share price.",
+          ],
+          'gaps': 5,
+          'word-bank': [
+            "quarterly",
+            "dividend",
+            "cash",
+            "ex-dividend",
+            "yield",
+          ],
+        }
+      },
+
+    },
+    7: {
+      'module-title': 'Introduction to Financial Statements',
+      'module-image': 'fintech',
+      'module-length': 12,
+      'paragraphs-length': 5,
+      'titles': [
+        "Why Financial Statements Matter",
+        "The Three Main Statements",
+        "How Traders Use Financial Statements",
+        "The Role of Annual & Quarterly Reports",
+        "Accuracy & Regulation",
+      ],
+      'paragraphs': [
+        "Financial statements are the report cards of a company. They show how the company is performing, how much money it’s making or losing, and how healthy its finances are.\n\nInvestors use them to decide whether to buy, hold, or sell shares.\n\nThey are important because:\nThey help you understand a company’s profitability\n\nThey reveal its financial health\n\nThey show how the company uses its money",
+
+        "Every public company must publish three key financial statements:\n\nIncome Statement → Shows revenue, expenses, and profit over a specific time period.\n\nBalance Sheet → Shows what the company owns (assets), what it owes (liabilities), and what’s left for owners (equity) at a specific point in time.\n\nCash Flow Statement → Shows how cash moves in and out of the business — from operations, investments, and financing activities.\n\nTogether, these give a complete picture of a company’s financial position.",
+
+        "Short-term traders might look for surprises in earnings or revenue that could quickly move the stock price.\n\nLong-term investors study trends over several quarters or years to see if a company is consistently growing and managing its finances well.",
+
+        "Public companies release:\n\nQuarterly reports (Q1, Q2, Q3, Q4) → Provide updated financial results every 3 months.\n\nAnnual report → A comprehensive summary of the company’s performance over the year, often with extra details and management commentary.\n\nThese reports are usually available on the company’s investor relations website.",
+
+        "Financial statements for public companies must follow specific accounting standards (such as IFRS or GAAP) and are usually audited by independent firms to ensure accuracy.\n\nThis gives investors more confidence in the numbers — though it’s still important to read carefully and think critically."
+      ],
+      'paragraph-questions': [
+        "Why is TVM important?",
+        "Why does inflation matter when thinking about the time value of money?"
+            "What is the difference between present value and future value?",
+        "How does interest (simple vs. compound) affect the value of money over time?",
+        "How do you calculate the future value of an investment?",
+        "What is a discount rate, and how is it used to calculate present value?",
+      ],
+      "questions-length": 6,
+      "questions": {
+        0: {
+          'type': "multiple-choice",
+          'question': "Which of the following is NOT one of the three main financial statements?",
+          'explanation': "Marketing plans are not part of financial statements — the three main ones are the Income Statement, Balance Sheet, and Cash Flow Statement.",
+          'answer': 2,
+          'options': [
+            "Income Statement",
+            "Cash Flow Statement",
+            "Marketing Plan Statement",
+            "Balance Sheet",
+          ],
+        },
+        1: {
+          'type': "true-or-false",
+          'prompt': "Why are financial statements important for investors? (Select all that apply)",
+          'answer': [1,2,3],
+          'options': [
+            "To understand a company’s profitability",
+            "To see its financial health",
+            "To know how much tax it paid",
+            "To track how it uses its money",
+          ],
+        },
+        2: {
+          'type': "drag-and-drop",
+          'prompt': "Tap the matching pairs",
+          'pairs-keys': [
+            "Income Statement",
+            "Balance Sheet",
+            "Cash Flow Statement",
+            "Annual Report",
+            "Quarterly Report",
+          ],
+          'pairs-values': [
+            "Shows revenue, expenses, and profit over time",
+            "Shows assets, liabilities, and equity at a point in time",
+            "Shows how cash moves in and out of the business",
+            "Full yearly summary of company performance",
+            "Financial update every 3 months",
+          ],
+        },
+        3: {
+          'type': "true-or-false",
+          'prompt': "Select the true statement[s] only",
+          'answer': [0,1,3],
+          'options': [
+            "The balance sheet shows a company’s assets, liabilities, and equity.",
+            "All public companies must publish financial statements.",
+            "The income statement covers only one day of operations.",
+            "Cash flow statements show how money moves in and out of a company.",
+            "Financial statements are always 100% accurate and never need further analysis.",
+          ],
+
+        },
+        4: {
+          'type': "multiple-choice",
+          'question': "If you wanted to see how much profit a company made in the last quarter, which statement would you check?",
+          'explanation': "The income statement shows profit (net income) over a period.",
+          'answer': 2,
+          'options': [
+            "Balance Sheet",
+            "Cash Flow Statement",
+            "Income Statement",
+            "Annual Report",
+          ],
+        },
+        5: {
+          'type': "fill-sentence-gaps",
+          'prompt': "Complete the sentences by selecting the correct word from the list below.",
+          'answers': [
+            ["income"],
+            ["balance"],
+            ["cash flow"],
+            ["quarterly", "annual"],
+            ["assets"],
+          ],
+          'sentences': [
+            "The ____ statement shows revenue, expenses, and profit.",
+            "The ____ sheet lists assets, liabilities, and equity.",
+            "The ____ statement tracks money coming in and out.",
+            "Public companies release ____ and ____ reports.",
+            "____ are what a company owns, like property and equipment.",
+          ],
+          'gaps': 6,
+          'word-bank': [
+            "income",
+            "balance",
+            "cash flow",
+            "annual",
+            "quarterly",
+            "assets",
+          ],
+        }
+      },
+
+    },
+    8: {
+      'module-title': 'Income  Sheet',
+      'module-image': 'fintech',
+      'module-length': 12,
+      'paragraphs-length': 5,
+      'titles': [
+        "What Is an Income Statement?",
+        "The Main Sections of an Income Statement",
+        "The Profit Equation",
+        "Why the Income Statement Matters to Traders",
+        "Limitations of the Income Statement",
+      ],
+      'paragraphs': [
+        "The income statement (also called the profit and loss statement or P&L) shows a company’s financial performance over a specific period — usually a quarter or a year.\n\nIt answers the question: “Did the company make a profit or a loss during this time?”",
+
+        "The income statement is usually divided into:\n\nRevenue (Sales) – All the money the company earned from selling products or services.\n\nExpenses – The costs of running the business (salaries, rent, raw materials, marketing, etc.).\n\nNet Income (Profit) – What’s left after expenses are subtracted from revenue.",
+
+        "The basic formula is: Net Income = Revenue - Expenses \n\nIf revenue is higher than expenses → the company made a profit.\n\nIf expenses are higher than revenue → the company had a loss.",
+
+        "The income statement helps investors see:\n\nWhether the company’s sales are growing or shrinking\n\nIf it’s controlling its costs\n\nHow profitable it is compared to competitors\n\nSudden changes in profit or revenue can move a stock’s price dramatically after an earnings report.",
+
+        "The income statement shows profitability on paper, but it doesn’t show cash movement (that’s the cash flow statement’s job).\n\nA company can be profitable yet still face cash problems if customers don’t pay on time or if it spends heavily on new projects."
+      ],
+      'paragraph-questions': [
+        "Why is TVM important?",
+        "Why does inflation matter when thinking about the time value of money?"
+            "What is the difference between present value and future value?",
+        "How does interest (simple vs. compound) affect the value of money over time?",
+        "How do you calculate the future value of an investment?",
+        "What is a discount rate, and how is it used to calculate present value?",
+      ],
+      "questions-length": 6,
+      "questions": {
+        0: {
+          'type': "multiple-choice",
+          'question': "What does an income statement show?",
+          'explanation': "The income statement shows revenue, expenses, and profit (or loss) over a given time.",
+          'answer': 2,
+          'options': [
+            "Assets, liabilities, and equity",
+            "Money coming in and out of the business",
+            "Financial performance over a specific period",
+            "Company ownership structure",
+          ],
+        },
+        1: {
+          'type': "true-or-false",
+          'prompt': "Which items are typically found on an income statement? (Select all that apply)",
+          'answer': [0,1,3],
+          'options': [
+            "Revenue",
+            "Expenses",
+            "Assets",
+            "Net Income",
+          ],
+        },
+        2: {
+          'type': "drag-and-drop",
+          'prompt': "Tap the matching pairs",
+          'pairs-keys': [
+            "Revenue",
+            "Expenses",
+            "Net Income",
+            "Profit",
+            "Loss",
+          ],
+          'pairs-values': [
+            "Total money earned from sales",
+            "Costs of running the business",
+            "Profit after expenses are subtracted from revenue",
+            "When revenue is greater than expenses",
+            "When expenses are greater than revenue",
+          ],
+        },
+        3: {
+          'type': "true-or-false",
+          'prompt': "Select the true statement[s] only",
+          'answer': [0,3],
+          'options': [
+            "The income statement is also called the profit and loss statement.",
+            "If expenses are higher than revenue, the company made a profit.",
+            "Revenue is the same as net income.",
+            "The income statement covers a period like a quarter or a year.",
+            "The income statement shows cash movement in the company.",
+          ],
+        },
+        4: {
+          'type': "multiple-choice",
+          'question': "If a company earns 500,000 USD in revenue and spends 400,000 USD in expenses, what is its net income?",
+          'explanation': "500,000 USD − 400,000 USD = 100,000 USD profit.",
+          'answer': 0,
+          'options': [
+            "100,000 USD",
+            "400,000 USD",
+            "900,000 USD",
+            "500,000 USD",
+          ],
+        },
+        5: {
+          'type': "fill-sentence-gaps",
+          'prompt': "Complete the sentences by selecting the correct word from the list below.",
+          'answers': [
+            ["revenue"],
+            ["expenses"],
+            ["profit"],
+            ["loss"],
+            ["net income"],
+            ["period"],
+          ],
+          'sentences': [
+            "____ is the total money a company earns from selling goods or services.",
+            "____ are the costs of running the business.",
+            "If revenue is greater than expenses, the company makes a ____. ",
+            "If expenses are greater than revenue, the company has a ____. ",
+            "____ is the profit left after all expenses are subtracted from revenue.",
+            "The income statement covers a specific ____. ",
+          ],
+          'gaps': 6,
+          'word-bank': [
+            "profit",
+            "revenue",
+            "expenses",
+            "loss",
+            "period",
+            "net income",
+          ],
+        }
+      },
+
+    },
+    9: {
+      'module-title': ' Balance Sheet',
+      'module-image': 'fintech',
+      'module-length': 12,
+      'paragraphs-length': 5,
+      'titles': [
+        "What Is a Balance Sheet?",
+        "Assets – What the Company Owns",
+        "What the Company Owes",
+        "The Shareholders’ Claim",
+        "Why the Balance Sheet Matters to Traders",
+      ],
+      'paragraphs': [
+        "The balance sheet is a snapshot of a company’s financial position at a specific point in time.\n\nIt shows what the company owns (assets), what it owes (liabilities), and what’s left for shareholders (equity).\n\nThe name comes from the fact that it must always balance: Assets = Liabilities + Equity",
+
+        "Assets are resources a company controls that have value.\n\nThey are usually split into:\n\nCurrent Assets → Can be converted into cash within a year (cash, inventory, accounts receivable).\n\nNon-Current Assets → Long-term resources (property, equipment, patents).",
+
+        "Liabilities are obligations the company must pay to others.\n\nThey are also split into:\n\nCurrent Liabilities → Debts due within a year (accounts payable, short-term loans).\n\nNon-Current Liabilities → Debts due after more than a year (bonds, long-term loans).",
+
+        "Equity represents the owners’ stake in the company after liabilities are subtracted from assets.\n\nIt includes:\n\nShare capital → Money raised from shareholders.\n\nRetained earnings → Profits the company has kept rather than paid out as dividends.\n\nIf a company sold all its assets and paid all its debts, equity is what would be left for shareholders.",
+
+        "The balance sheet helps investors assess:\n\nFinancial health → Can the company pay its debts?\n\nLeverage → How much debt the company is using to finance operations.\n\nLiquidity → How quickly assets can be converted to cash.\n\nStrong balance sheets often mean more stability, especially during economic downturns."
+      ],
+      'paragraph-questions': [
+        "Why is TVM important?",
+        "Why does inflation matter when thinking about the time value of money?"
+            "What is the difference between present value and future value?",
+        "How does interest (simple vs. compound) affect the value of money over time?",
+        "How do you calculate the future value of an investment?",
+        "What is a discount rate, and how is it used to calculate present value?",
+      ],
+      "questions-length": 6,
+      "questions": {
+        0: {
+          'type': "multiple-choice",
+          'question': "Which formula always applies to a balance sheet?",
+          'explanation': "The balance sheet equation must always hold true.",
+          'answer': 1,
+          'options': [
+            "Assets + Liabilities = Equity",
+            "Assets = Liabilities + Equity",
+            "Assets – Liabilities = Revenue",
+            "Liabilities = Assets + Equity",
+          ],
+        },
+        1: {
+          'type': "true-or-false",
+          'prompt': "Which of the following are examples of current assets? (Select all that apply)",
+          'answer': [01,3],
+          'options': [
+            "Accounts receivable",
+            "Cash",
+            "Machinery",
+            "Inventory",
+          ],
+        },
+        2: {
+          'type': "drag-and-drop",
+          'prompt': "Tap the matching pairs",
+          'pairs-keys': [
+            "Assets",
+            "Liabilities",
+            "Equity",
+            "Current Assets",
+            "Non-Current Liabilities",
+          ],
+          'pairs-values': [
+            "What the company owns",
+            "What the company owes",
+            "Owners’ claim after debts are paid",
+            "Can be converted into cash within a year",
+            "Debts due in more than a year",
+          ],
+        },
+        3: {
+          'type': "true-or-false",
+          'prompt': "Select the true statement[s] only",
+          'answer': [1,2,3],
+          'options': [
+            "The balance sheet shows performance over a period of time.",
+            "Assets must always equal liabilities plus equity.",
+            "Current liabilities are debts due within one year.",
+            "Retained earnings are part of equity.",
+            "Cash is considered a non-current asset.",
+          ],
+        },
+        4: {
+          'type': "multiple-choice",
+          'question': "If a company has USD500,000 in assets and USD350,000 in liabilities, what is its equity?",
+          'explanation': "USD500,000 − USD350,000 = USD150,000 equity.",
+          'answer': 0,
+          'options': [
+            "USD150,000",
+            "USD350,000",
+            "USD500,000",
+            "USD850,000",
+          ],
+        },
+        5: {
+          'type': "fill-sentence-gaps",
+          'prompt': "Complete the sentences by selecting the correct word from the list below.",
+          'answers': [
+            ["assets"],
+            ["liabilities"],
+            ["equity"],
+            ["current"],
+            ["non-current"],
+            ["retained"],
+          ],
+          'sentences': [
+            "____ are what the company owns.",
+            "____ are what the company owes.",
+            "____ is the shareholders’ claim after debts are paid.",
+            "____ assets can be converted to cash within a year.",
+            "____ liabilities are debts due after more than a year.",
+            "____ earnings are profits kept in the business instead of paid out.",
+          ],
+          'gaps': 6,
+          'word-bank': [
+            "liabilities",
+            "equity",
+            "current",
+            "assets",
+            "non-current",
+            "retained",
+          ],
+        }
+      },
+
+    },
+    10: {
+      'module-title': 'Cash Flow Statement',
+      'module-image': 'fintech',
+      'module-length': 12,
+      'paragraphs-length': 5,
+      'titles': [
+        "What Is a Cash Flow Statement?",
+        "Why Cash Flow Matters",
+        "The Three Sections of a Cash Flow Statement",
+        "How Traders Use the Cash Flow Statement",
+        "Cash Flow vs Profit",
+      ],
+      'paragraphs': [
+        "The cash flow statement shows how money actually moves in and out of a company during a specific period.\n\nWhile the income statement shows profits 'on paper,' the cash flow statement focuses on real cash movement — helping you see if the company can pay bills, invest, and grow.",
+
+        "A company can be profitable yet still run into trouble if it doesn’t have enough cash on hand.\n\nCash is essential for:\n- Paying suppliers and employees\n- Funding new projects\n- Paying debts and dividends\n\nPositive cash flow means more money is coming in than going out. Negative cash flow means the opposite.",
+
+        "Operating Activities → Cash from day-to-day business operations (selling products, paying expenses).\n\nInvesting Activities → Cash used for or earned from buying/selling assets like property, equipment, or investments.\n\nFinancing Activities → Cash from or paid to investors and lenders (issuing shares, paying dividends, borrowing money, repaying loans).",
+
+        "Traders and investors look for:\n- Consistently positive cash flow from operations (healthy business).\n- Avoiding over-reliance on financing for survival.\n- Strong cash reserves to weather bad times or seize opportunities.",
+
+        "Profit (from the income statement) includes non-cash items like depreciation.\n\nCash flow is the actual movement of money.\n\nA company might show a profit but still have negative cash flow if customers haven’t paid yet or if it invests heavily in growth."
+      ],
+      'paragraph-questions': [
+        "Why is TVM important?",
+        "Why does inflation matter when thinking about the time value of money?"
+            "What is the difference between present value and future value?",
+        "How does interest (simple vs. compound) affect the value of money over time?",
+        "How do you calculate the future value of an investment?",
+        "What is a discount rate, and how is it used to calculate present value?",
+      ],
+      "questions-length": 6,
+      "questions": {
+        0: {
+          'type': "multiple-choice",
+          'question': "What does a cash flow statement show?",
+          'explanation': "The cash flow statement focuses on actual cash inflows and outflows.",
+          'answer': 2,
+          'options': [
+            "A company’s assets and liabilities",
+            "The company’s profit or loss over a period",
+            "The movement of money in and out of the business",
+            "The ownership structure of the company",
+          ],
+        },
+        1: {
+          'type': "true-or-false",
+          'prompt': "Which of these are sections in a cash flow statement? (Select all that apply)",
+          'answer': [0,1,2],
+          'options': [
+            "Operating activities",
+            "Investing activities",
+            "Financing activities",
+            "Profit activities",
+          ],
+        },
+        2: {
+          'type': "drag-and-drop",
+          'prompt': "Tap the matching pairs",
+          'pairs-keys': [
+            "Operating Activities",
+            "Investing Activities",
+            "Financing Activities",
+            "Positive Cash Flow",
+            "Negative Cash Flow",
+          ],
+          'pairs-values': [
+            "Cash from core business operations",
+            "Cash from buying or selling assets",
+            "Cash from investors or lenders",
+            "More money coming in than going out",
+            "More money going out than coming in",
+          ],
+        },
+        3: {
+          'type': "true-or-false",
+          'prompt': "Select the true statement[s] only",
+          'answer': [0,1,2,3],
+          'options': [
+            "A company can have profit but negative cash flow.",
+            "Operating activities include selling products and paying expenses.",
+            "Financing activities include paying dividends.",
+            "Investing activities include buying office equipment.",
+            "Cash flow and profit are exactly the same thing.",
+          ],
+        },
+        4: {
+          'type': "multiple-choice",
+          'question': "If a company’s cash flow from operations is consistently negative, what might this indicate?",
+          'explanation': "Negative operating cash flow suggests the business is struggling to generate cash from normal activities.",
+          'answer': 1,
+          'options': [
+            "The company is profitable",
+            "The company’s core business is not generating enough cash",
+            "The company has too much equity",
+            "The company has no liabilities",
+          ],
+        },
+        5: {
+          'type': "fill-sentence-gaps",
+          'prompt': "Complete the sentences by selecting the correct word from the list below.",
+          'answers': [
+            ["operating"],
+            ["investing"],
+            ["financing"],
+            ["positive"],
+            ["negative"],
+            ["profit"],
+          ],
+          'sentences': [
+            "____ activities are cash flows from day-to-day business operations.",
+            "Buying or selling assets falls under ____ activities.",
+            "Borrowing money or issuing shares is part of ____ activities.",
+            "More money coming in than going out means ____ cash flow.",
+            "More money going out than coming in means ____ cash flow.",
+            "Cash flow is different from ____.",
+          ],
+          'gaps': 6,
+          'word-bank': [
+            "investing",
+            "positive",
+            "financing",
+            "operating",
+            "profit",
+            "negative",
+          ],
+        }
+      },
+
+    },
+    11: {
+      'module-title': 'Key Financial Ratios Simplified',
+      'module-image': 'fintech',
+      'module-length': 12,
+      'paragraphs-length': 5,
+      'titles': [
+        "Why Financial Ratios Matter",
+        "Price-to-Earnings (P/E) Ratio",
+        "Earnings Per Share (EPS)",
+        "Return on Equity (ROE)",
+        "Debt-to-Equity (D/E) Ratio",
+      ],
+      'paragraphs': [
+        "Financial ratios are quick calculations that help you compare companies and understand their performance without reading every line of their financial statements.\n\nThey turn large amounts of financial data into simple numbers that are easy to interpret.",
+
+        "The P/E ratio compares a company’s share price to its earnings per share (EPS): P/E Ratio = Share Price / Earnings Per Share \n\nA high P/E can mean investors expect strong future growth — or that the stock is overpriced.\n\nA low P/E can mean the stock is undervalued — or that the company has weak growth prospects.",
+
+        "EPS shows how much profit each share of stock represents: EPS = (Net Income - Dividends on Preferred Stock) / (Number of Shares Outstanding) \n\nHigher EPS means the company is making more profit per share, which is generally good for investors.",
+
+        "ROE measures how efficiently a company uses shareholders’ equity to generate profits: ROE = (Net Income / Shareholders' Equity)*100 \n\nA higher ROE suggests the company is good at turning investments from shareholders into profits.",
+
+        "The D/E ratio shows how much debt a company has compared to its equity: D/E Ratio = Total Liabilities / Shareholders' Equity \n\nA high D/E means the company relies heavily on borrowing, which can be risky.\n\nA low D/E means the company has less debt relative to equity."
+      ],
+      'paragraph-questions': [
+        "Why is TVM important?",
+        "Why does inflation matter when thinking about the time value of money?"
+            "What is the difference between present value and future value?",
+        "How does interest (simple vs. compound) affect the value of money over time?",
+        "How do you calculate the future value of an investment?",
+        "What is a discount rate, and how is it used to calculate present value?",
+      ],
+      "questions-length": 6,
+      "questions": {
+        0: {
+          'type': "multiple-choice",
+          'question': "Which ratio compares a company’s share price to its earnings per share?",
+          'explanation': "The P/E ratio compares stock price to earnings per share.",
+          'answer': 2,
+          'options': [
+            "EPS",
+            "ROE",
+            "P/E Ratio",
+            "D/E Ratio",
+          ],
+        },
+
+        1: {
+          'type': "true-or-false",
+          'prompt': "Which ratios help measure a company’s profitability? (Select all that apply)",
+          'answer': [0,1,2],
+          'options': [
+            "EPS",
+            "ROE",
+            "P/E Ratio",
+            "D/E Ratio",
+          ],
+        },
+
+        2: {
+          'type': "drag-and-drop",
+          'prompt': "Tap the matching pairs",
+          'pairs-keys': [
+            "P/E Ratio",
+            "EPS",
+            "ROE",
+            "D/E Ratio",
+          ],
+          'pairs-values': [
+            "Price per share divided by earnings per share",
+            "Profit allocated to each outstanding share",
+            "Net income as a percentage of shareholders’ equity",
+            "Total liabilities compared to shareholders’ equity",
+          ],
+        },
+
+        3: {
+          'type': "true-or-false",
+          'prompt': "Select the true statement[s] only",
+          'answer': [1,2],
+          'options': [
+            "A high P/E always means a company is overpriced.",
+            "EPS tells you how much profit each share represents.",
+            "ROE measures how well a company uses equity to generate profits.",
+            "A high D/E ratio means a company is less dependent on debt.",
+            "All four ratios are found on the balance sheet.",
+          ],
+        },
+
+        4: {
+          'type': "multiple-choice",
+          'question': "If a company has USD200,000 in net income and USD1,000,000 in shareholders’ equity, what is its ROE?",
+          'explanation': "ROE = Net income ÷ Equity = 200,000 ÷ 1,000,000 = 20%",
+          'answer': 3,
+          'options': [
+            "5%",
+            "10%",
+            "15%",
+            "20%",
+          ],
+        },
+
+        5: {
+          'type': "fill-sentence-gaps",
+          'prompt': "Complete the sentences by selecting the correct word from the list below.",
+          'answers': [
+            ["P/E"],
+            ["EPS", "profit"],
+            ["ROE", "equity"],
+            ["D/E"],
+          ],
+          'sentences': [
+            "The ____ ratio compares stock price to earnings per share.",
+            "____ measures how much ____ each share represents.",
+            "____ measures profitability as a percentage of shareholders’ ____.",
+            "The ____ ratio compares debt to equity.",
+          ],
+          'gaps': 6,
+          'word-bank': [
+            "P/E",
+            "EPS",
+            "ROE",
+            "D/E",
+            "profit",
+            "equity",
+          ],
+        }
+      },
+
+    },
+  },
+  1: {
+    'content-amount': 9,
+  },
+  2: {
+    'content-amount': 5,
+  },
+  3: {
+    'content-amount': 7,
+  },
+  4: {
+    'content-amount': 7,
+  },
+  5: {
+    'content-amount': 9,
+  },
+
+};

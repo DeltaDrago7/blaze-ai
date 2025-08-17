@@ -20,7 +20,7 @@ final FlutterTts flutterTts = FlutterTts();
 
 class _EducationLessonState extends State<EducationLesson> {
 
-
+  int parentModule = 0;
   int? currentWordStart, currentWordEnd;
   int startOffset = 0, endOffset = 0;
   int paragraphIndex = 0;
@@ -66,9 +66,9 @@ class _EducationLessonState extends State<EducationLesson> {
   @override
   void initState() {
     super.initState();
-    chatbotScreenTitle = educationalContent[currentEducationModule]['full-module-title'];
-    chatbotScreenSubTitle = 'Module ${currentEducationModule+1} - ${educationalContent[currentEducationModule]['module-title']}';
-    sentence = educationalContent[currentEducationModule]['paragraphs'][paragraphIndex];
+    chatbotScreenTitle =educationalModules[parentModule]['title'];
+    chatbotScreenSubTitle = 'Module ${currentEducationModule+1} - ${educationalContent[parentModule][currentEducationModule]['module-title']}';
+    sentence = educationalContent[parentModule][currentEducationModule]['paragraphs'][paragraphIndex];
     flutterTts.setLanguage("en-US");
     flutterTts.setPitch(1.0);
     flutterTts.setSpeechRate(0.5); // slower speed
@@ -122,7 +122,7 @@ class _EducationLessonState extends State<EducationLesson> {
                                 startOffset = 0;
                                 endOffset = 0;
                                 started = false;
-                                sentence = educationalContent[currentEducationModule]['paragraphs'][paragraphIndex];
+                                sentence = educationalContent[parentModule][currentEducationModule]['paragraphs'][paragraphIndex];
                               });
                             }
                           },
@@ -151,7 +151,7 @@ class _EducationLessonState extends State<EducationLesson> {
                           width: screenWidth(context) * 0.9,
                           alignment: Alignment.centerLeft,
                           child: Text(
-                            educationalContent[currentEducationModule]['titles'][paragraphIndex],
+                            educationalContent[parentModule][currentEducationModule]['titles'][paragraphIndex],
                             style: GoogleFonts.montserrat(
                               fontSize: 24,
                               color: Colors.white,
@@ -273,7 +273,7 @@ class _EducationLessonState extends State<EducationLesson> {
                                 UserModel.userData['modules']['modules-progress']['$currentEducationModule']['progress'] += 1;
                                 await UserModel.userRef.update({'modules.modules-progress.$currentEducationModule.progress': UserModel.userData['modules']['modules-progress']['$currentEducationModule']['progress'],});
                               }
-                              if(paragraphIndex == educationalContent[currentEducationModule]['paragraphs'].length - 1){
+                              if(paragraphIndex == educationalContent[parentModule][currentEducationModule]['paragraphs'].length - 1){
                                 started = false;
                                 Navigator.pushNamed(context, '/education-questions');
                               }
@@ -284,7 +284,7 @@ class _EducationLessonState extends State<EducationLesson> {
                                   currentWordEnd = 0;
                                   startOffset = 0;
                                   endOffset = 0;
-                                  sentence = educationalContent[currentEducationModule]['paragraphs'][paragraphIndex];
+                                  sentence = educationalContent[parentModule][currentEducationModule]['paragraphs'][paragraphIndex];
                                   _speak(sentence.substring(currentWordStart ?? 0));
                                 });
                               }

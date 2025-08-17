@@ -2,6 +2,7 @@
 import 'dart:convert';
 
 import 'package:blazemobile/route_generator.dart';
+import 'package:blazemobile/utils.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
@@ -44,9 +45,59 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: mainColor),
-        textTheme: GoogleFonts.montserratTextTheme(
-          Theme.of(context).textTheme,
+
+        scaffoldBackgroundColor: Colors.grey[100], // Scaffold background color
+
+        textTheme: GoogleFonts.montserratTextTheme(Theme.of(context).textTheme).copyWith(
+
+          headlineMedium: //headings
+            TextStyle(color: Colors.white, fontSize: 40, fontWeight: FontWeight.w700),
+          headlineSmall: //Subheadings
+            TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.w600),
+
+          titleMedium: //titles
+            TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w500),
+
+          bodyMedium: //main body content
+            TextStyle(color: Colors.white70, fontSize: 16, fontWeight: FontWeight.normal),
+          bodySmall: //captions
+            TextStyle(color: Colors.white70, fontSize: 12, fontWeight: FontWeight.normal),
+
         ),
+
+
+        filledButtonTheme: FilledButtonThemeData(
+          style: ButtonStyle(
+            padding: MaterialStateProperty.all(EdgeInsets.symmetric(horizontal: 32, vertical: 8)),
+            backgroundColor: MaterialStateProperty.resolveWith<Color>((states) {
+              if (states.contains(MaterialState.disabled)) {
+                return mainColor.withOpacity(0.5); // 50% opacity when disabled
+              }
+              return mainColor; // normal color
+            }),
+            foregroundColor: MaterialStateProperty.all(Colors.white),
+            shape: MaterialStateProperty.all(
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
+            ),
+            textStyle: MaterialStateProperty.all(
+              TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+            ),
+          ),
+        ),
+
+        iconButtonTheme: IconButtonThemeData(
+          style: ButtonStyle(
+
+
+            iconColor: WidgetStateProperty.all(mainColor),      // Icon color
+            overlayColor: WidgetStateProperty.all(secondaryColor), // Splash color
+            padding: WidgetStateProperty.all(EdgeInsets.all(12)),  // Padding inside button
+            minimumSize: WidgetStateProperty.all(Size(40, 40)),    // Minimum tap target size
+            // You can also customize other ButtonStyle properties
+          ),
+        ),
+
+
         snackBarTheme: SnackBarThemeData(
           backgroundColor: Colors.white,
           contentTextStyle: TextStyle(color: mainColor),
@@ -56,61 +107,13 @@ class MyApp extends StatelessWidget {
           ),
           elevation: 6,
         ),
+
+
       ),
       initialRoute: '/home',
 
       onGenerateRoute: RouteGenerator.generateRoute,
 
-      /*routes: {
-        '/': (context) => InitialScreen(),
-        '/login': (context) => Login(),
-        '/whats-your-name': (context) => WhatsYourName(),
-        '/achieve-goals': (context) => AchieveGoals(),
-        '/how-to-achieve-goals': (context) => HowToAchieveGoals(),
-        '/investing-or-saving': (context) => InvestingOrSaving(),
-        '/make-more-by-investing': (context) => MakeMoreByInvesting(),
-        '/how-long-to-invest': (context) => HowLongToInvest(),
-        '/risk-profile': (context) => RiskProfile(qIndex: 0,),
-        '/finalizing-investing-plan': (context) => FinalizingInvestingPlan(),
-        '/stressed-about-money': (context) => StressedAboutMoney(),
-        '/investing-plan-summary': (context) => InvestingPlanSummary(),
-        '/phone-authentication': (context) => PhoneAuthentication(),
-        '/otp-screen': (context) => OTPScreen(),
-        '/how-did-you-find-us': (context) => HowDidYouFindUs(),
-        '/signup-credentials': (context) => SignupCredentials(),
-
-        //main screens (require auth)
-        '/plan-finalized': (context) => PlanFinalized(),
-        '/home': (context) => Home(),
-        '/market': (context) => Market(),
-        '/discover': (context) => Discover(),
-        '/discover-playlist': (context) => DiscoverPlaylist(),
-        '/learn': (context) => Learn(),
-        '/playlists': (context) => Playlists(),
-        '/education-module-progress': (context) => EducationModuleProgress(),
-        '/education-lesson': (context) => EducationLesson(),
-        '/education-questions': (context) => EducationQuestions(),
-        '/education-module-complete' :(context) => EducationModuleComplete(),
-        '/create-tailored-playlist-intro': (context) => CreateTailoredPlaylistIntro(),
-        '/weight_preferences': (context) => WeightPreferences(),
-        '/playlist-interests': (context) => PlayListInterests(),
-        '/company-interests': (context) => CompanyInterests(),
-        '/risk-scoring': (context) => RiskScoring(qIndex: 0,),
-        '/risk-calculation': (context) => RiskCalculation(),
-        '/playlist-duration': (context) => PlaylistDuration(),
-        '/diversification-preference': (context) => DiversificationPreference(),
-        '/company-size-preference': (context) => CompanySizePreference(),
-        '/dividend-preference': (context) => DividendPreference(),
-        '/playlist-goal': (context) => PlaylistGoal(),
-        '/generating-portfolio': (context) => GeneratingPortfolio(),
-        '/create-solo-playlist-intro': (context) => CreateSoloPlaylistIntro(),
-        '/playlist-name': (context) => PlaylistName(),
-        '/created-playlist': (context) => CreatedPlaylist(),
-        '/add-stocks': (context) => AddStocks(),
-        '/stock-weights': (context) => StockWeights(stockWeightsPassed: [],descriptionPassed: '',editing: false,),
-        '/chatbot-general': (context) => ChatbotGeneral(),
-        '/stock': (context) => Stock(),
-      },*/
     );
   }
 }

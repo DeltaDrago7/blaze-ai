@@ -52,7 +52,8 @@ class _FinalizingInvestingPlanState extends State<FinalizingInvestingPlan> {
                   TextSpan(
                       children: [
                         TextSpan(
-                          text: "We're finalizing your ",
+                          //text: "We're finalizing your ",
+                          text: "Risk profile summary",
                           style: GoogleFonts.montserrat(
                             fontSize: screenWidth(context) * 0.07,
                             fontWeight: FontWeight.w700,
@@ -110,7 +111,8 @@ class _FinalizingInvestingPlanState extends State<FinalizingInvestingPlan> {
                   ),
                   child: TextButton(
                     onPressed: (){
-                      Navigator.pushNamed(context, '/stressed-about-money');
+                      //Navigator.pushNamed(context, '/stressed-about-money');
+                      Navigator.pushNamed(context, '/playlist-duration');
                     },
                     child: Text("Continue", style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 16),),
                   ),

@@ -194,7 +194,8 @@ class _RiskScoringState extends State<RiskScoring> {
                               });
                             }
 
-                            Navigator.pushNamed(context, '/playlist-duration');
+                            //Navigator.pushNamed(context, '/playlist-duration');
+                            Navigator.pushNamed(context, '/finalizing-investing-plan');
                           }
                           else{
                             userScores["q${widget.qIndex}"] = questions[widget.qIndex]['score-map'][selectedAnswers[widget.qIndex]];

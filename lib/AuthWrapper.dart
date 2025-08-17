@@ -86,7 +86,7 @@ class _VerifyEmailPageState extends State<VerifyEmailPage> {
     print('calling Verify Email');
     try {
       final user = FirebaseAuth.instance.currentUser!;
-      //FirebaseAuth.instance.setSettings(appVerificationDisabledForTesting: true); for testing
+      FirebaseAuth.instance.setSettings(appVerificationDisabledForTesting: true); //for testing
       print('sending....');
       await user.sendEmailVerification();
       print('....sent');
