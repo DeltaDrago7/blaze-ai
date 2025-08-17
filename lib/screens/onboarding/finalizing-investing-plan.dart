@@ -19,13 +19,11 @@ class _FinalizingInvestingPlanState extends State<FinalizingInvestingPlan> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    currentOnboardingQuestion = 14;
   }
 
 
   @override
   Widget build(BuildContext context) {
-    currentOnboardingQuestion = 14;
     return Scaffold(
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
@@ -46,7 +44,6 @@ class _FinalizingInvestingPlanState extends State<FinalizingInvestingPlan> {
             child: Column(
               children: [
                 onboardingAppBarLogo(context, "risk-profile"),
-                progressBar(currentOnboardingQuestion / totalOnboardingQuestions),
                 Text.rich(
                   textAlign: TextAlign.center,
                   TextSpan(
